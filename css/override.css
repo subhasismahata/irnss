@@ -1,0 +1,14 @@
+span.term {
+   font-family: monospace;
+   font-style: normal;
+   font-weight: bold;
+   color: #556B2F;
+}
+
+p.pheader { text-align:justify;font-weight:bold;font-size:20px;padding-bottom:20px;}
+p.psubheader { text-align:justify;font-weight:bold;font-size:18px;font-style:italic;padding-bottom:15px;}
+p.pcontent { text-align:justify; padding-bottom:20px;}
+p.pcenter {text-align:center; padding-bottom:20px;}
+p.pfigure { text-align:center; padding-bottom:20px;}
+p.pnote { text-align:justify;font-style:italic;padding-bottom:20px;}
+.deactivate-link { pointer-events: none; cursor: default; color:grey;}  
