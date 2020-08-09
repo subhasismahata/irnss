@@ -1,0 +1,468 @@
+<!-- This file needs to be edited by the lab developer to suit the requirements of their lab in particular.-->
+<!-- Add class="default" to include any element as it is specified in default.html. Do not include class="default" to the elements that you want to edit -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation</title>
+    </head>
+
+    <body>
+        <div id="experiment">
+            <!-- The Experiment Document Container-->
+            <!-- The lab Header contains the logo and the name of the lab, usually displayed on the top of the page-->
+
+            <header class="default" id="experiment-header">
+                <div class="logo" id="experiment-header-logo">
+                    <!-- Enclose the logo image of your lab or write it in text-->
+                    <img src="../images/logo.jpg"></div>
+
+                <div class="heading" id="experiment-header-heading">
+                    <!-- Write the name of your lab and link it to the home 
+          page of your lab (h1 tag is preferred while writing your 
+          lab name)-->
+                    <a href="../index.html">Navigation</a>
+                </div><!-- Add any additional element you want to add to the lab 
+        header, For example : Help (Enclosing them with suitable 
+        div is recommended)-->
+            </header><!-- The lab article is the main content area where all the experiment content sits-->
+
+            <article id="experiment-article">
+                <!-- The lab article has an header, optional navigational 
+        menu, number of sections, an optional sidebar and a closing 
+        footer-->
+
+                <div class="breadcrumb" id="experiment-article-breadcrumb"></div>
+
+                <header class="heading" id="experiment-article-heading">
+                    Introduction to Determination of curvilinear position from NMEA file.
+                </header><!-- Navigation menu is useful to organize the view of multiple sections inside the article-->
+
+                <nav class="default" id="experiment-article-navigation">
+                    <ul id="experiment-article-navigation-menu">
+                        <!-- The menu can be dynamically generated to contain 
+              the headings of your sections or instead write the 
+              menu items of your choice individually enclosedu in 
+              &lt;li&gt; tag as shown below-->
+                    </ul>
+                </nav><!-- All the sections of your lab or experiment can be 
+          enclosed together with a div element as shown below-->
+
+                <div id="experiment-article-sections">
+                    <!------------------------------- First section of the article---------------------------------->
+
+                    <section id="experiment-article-section-1">
+                        <div class="icon" id="experiment-article-section-1-icon">
+                            <!-- Enclose the icon image of your lab -->
+                            <img src="../images/introduction.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="heading" id="experiment-article-section-1-heading">
+                            Introduction
+                        </div><!-- Write the section content inside a paragraph element, You can also include images with &lt;img&gt; tag -->
+
+                        <div class="content" id="experiment-article-section-1-content">                            
+                            <p class="pcontent">How to find Latitude, Longitude and height from NMEA string.</br> How to find HDOP from NMEA string.</p>							
+                        </div>	
+                    </section>
+                    <!-------------------------- Second section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-2">
+                        <div class="icon" id="experiment-article-section-2-icon">
+                            <!-- Enclose the icon image of your lab. -->
+                            <img src="../images/theory.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="heading" id="experiment-article-section-2-heading">
+                            Theory
+                        </div><!-- Write the section content inside a paragraph element, we can also include images with &lt;img&gt; tag -->
+
+                        <div class="content" id="experiment-article-section-2-content">  
+                            <p class="pheader">What is NMEA?</p>                                                       
+                            <p class="pcontent">
+                                NMEA 0183 is a combined electrical and data specification for communication between marine electronics
+								 such as echo sounder, sonars, anemometer, gyrocompass, autopilot, GPS receivers and many other types
+								  of instruments. It has been defined by, and is controlled by, the U.S. National Marine Electronics
+								   Association. The NMEA 0183 standard uses a simple ASCII, serial communications protocol that defines
+								    how data are transmitted in a sentence from one talker to multiple listeners at a time.<br/><br/>
+									
+									Global Navigation Satellite Systems(GNSS) Receiver output message has the following 
+									six sentences: RMC, VTG, GGA, GSA, GSV and GLL.
+
+                            </p class="pcontent"> Standard NMEA message list shown in Table1</p>		
+							
+
+                                                                                 
+                            <p class="pcontent">
+							<h2>Table-1 NMEA Message list</h2>
+
+										<table>
+										  <tr>
+											<th>Syntax</th>
+											<th>Default</th>
+											<th>Description</th>
+										  </tr>
+										  <tr>
+											<td>$--RMC</td>
+											<td>ON</td>
+											<td>NMEA: Recommended minimum specific GNSS data</td>
+										  </tr>
+										  <tr>
+											<td>$--VTG</td>
+											<td>ON</td>
+											<td>NMEA: Track made good and ground speed</td>
+										  </tr>
+										  <tr>
+											<td>$--GGA</td>
+											<td>ON</td>
+											<td>NMEA: Global position system fix data</td>
+										 </tr>
+										  <tr>
+											<td>$--GSA</td>
+											<td>ON</td>
+											<td>NMEA: GPS DOP and active satellites.</td>
+										 </tr>
+										  <tr>
+											<td>$--GGA</td>
+											<td>ON</td>
+											<td>NMEA: Global position system fix data</td>
+										 </tr>
+										  <tr>
+											<td>$--GSV</td>
+											<td>ON</td>
+											<td>NMEA: GPS satellites in view</td>
+										 </tr>
+										 <tr>
+											<td>$--GLL</td>
+											<td>ON</td>
+											<td>NMEA: Geographic position latitude/longitude</td>
+										 </tr>
+										</table>
+                                </p>
+
+
+                        </div>
+                    </section>
+
+                    <!-------------------------- Third section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-3">
+                        <div class="icon" id="experiment-article-section-3-icon">
+                            
+                            <img src="../images/objective.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-3-heading">
+                            Objective
+                        </div>
+
+                        <div class="content" id="experiment-article-section-3-content">                            
+                            <p><br/><br/>
+                            <ul>
+                                <li>Find the user receiver position from NMEA string.  </li><br/>
+                                <li>Find the user receiver curvilinear position. </li><br/>
+                            </ul>							
+                            </p>                            
+                        </div>
+                    </section>							
+
+                    <!-------------------------- Fourth section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-4">
+                        <div class="icon" id="experiment-article-section-4-icon">
+
+                            <img src="../images/procedure.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-4-heading">
+                            Procedure
+                        </div>
+
+                        <div class="content" id="experiment-article-section-4-content">    
+						 <p class="pcontent">  
+						 Read the NMEA file in any suitable software/ programming language for example in Matlab/Python. 
+						 You also open a file in any text editor and try to find the GGA string.  
+							Find the NMEA string GGA . In case of GPS receiver, you get string given example<br/>
+							Example:
+							$GPGGA,183417.000,04814.03970,N,01128.52205,E,0,00,99.0,495.53,M,47.6,M,*53  <br/>
+							 	
+							Each NMEA message start with ‘$’, GP: systems work in GPS mode, GGA:  NMEA sentence,<br/>
+							Time stamp: hhmmss.sss  so in this example  18 34 17.000<br/>
+							Latitude: DDMM.MMMMM DD: Degree    04 81 4.03970,N,<br/> and latitude direction North /South<br/>
+							Longitude: longitude   DDDMM.MMMMM, Degree first three digits   01128.52205,E, and direction East / West.<br/>
+							GPS Quality : 0 = fix not available or invalid, 1=GPS fixed or valid, 2= Differential GPS or fix valid, 6= Estimated mode<br/>
+							Satellite in use: example =00 in this example.<br/>
+							HDOP: Horizontal dilution of precision, max: 99.0
+							Alt: Height above mean sea level, max: 100000.0 m in this example 495.53,M
+							Alt/val: reference unit for attitude (M=meters) in this example 47.6,M
+							Check sum: Hexadecimal checksum in this example 53.  
+                      
+                            
+                            &nbsp;							
+                        </div>
+                    </section>
+                    <!-------------------------- Fifth section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-5">
+                        <div class="icon" id="experiment-article-section-5-icon">
+
+                            <img src="../images/simulation.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-5-heading">
+                            Simulator
+                        </div>
+
+                        <div class="content" id="experiment-article-section-5-content">                            
+                            <p class="pcenter">
+<!--                                <object data="./content/fuzzyweightedaverage.swf" height="700" width="900"></object>  
+								<p class="pfigure">
+                                <img alt="step6" src="images/simulator.jpg" style="width:700px; height:480px">
+                            </p>
+                            -->
+                            <p>
+                                
+								<!--<table>
+										  <tr>
+											<th>$GPGGA,074122.873,2219.122,N,08718.786,E,1,12,1.0,0.0,M,0.0,M,,*66
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074122.873,A,2219.122,N,08718.786,E,014.1,170.6,040820,000.0,W*78
+													$GPGGA,074123.873,2219.118,N,08718.787,E,1,12,1.0,0.0,M,0.0,M,,*6F
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074123.873,A,2219.118,N,08718.787,E,011.3,174.1,040820,000.0,W*75
+													$GPGGA,074124.873,2219.115,N,08718.787,E,1,12,1.0,0.0,M,0.0,M,,*65
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074124.873,A,2219.115,N,08718.787,E,021.0,252.0,040820,000.0,W*79
+													$GPGGA,074125.873,2219.113,N,08718.781,E,1,12,1.0,0.0,M,0.0,M,,*64
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074125.873,A,2219.113,N,08718.781,E,031.8,264.6,040820,000.0,W*72
+													$GPGGA,074126.873,2219.112,N,08718.772,E,1,12,1.0,0.0,M,0.0,M,,*6A
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074126.873,A,2219.112,N,08718.772,E,028.9,260.1,040820,000.0,W*76
+													$GPGGA,074127.873,2219.110,N,08718.763,E,1,12,1.0,0.0,M,0.0,M,,*69
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074127.873,A,2219.110,N,08718.763,E,037.4,262.4,040820,000.0,W*71
+													$GPGGA,074128.873,2219.109,N,08718.752,E,1,12,1.0,0.0,M,0.0,M,,*6C
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074128.873,A,2219.109,N,08718.752,E,029.8,257.4,040820,000.0,W*71
+													$GPGGA,074129.873,2219.107,N,08718.743,E,1,12,1.0,0.0,M,0.0,M,,*63
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074129.873,A,2219.107,N,08718.743,E,037.2,264.6,040820,000.0,W*79
+													$GPGGA,074130.873,2219.106,N,08718.732,E,1,12,1.0,0.0,M,0.0,M,,*6C
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074130.873,A,2219.106,N,08718.732,E,035.6,259.5,040820,000.0,W*7D
+													$GPGGA,074131.873,2219.104,N,08718.722,E,1,12,1.0,0.0,M,0.0,M,,*6E
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074131.873,A,2219.104,N,08718.722,E,047.8,261.6,040820,000.0,W*7C
+													$GPGGA,074132.873,2219.102,N,08718.707,E,1,12,1.0,0.0,M,0.0,M,,*6C
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074132.873,A,2219.102,N,08718.707,E,050.2,260.3,040820,000.0,W*76
+													$GPGGA,074133.873,2219.099,N,08718.693,E,1,12,1.0,0.0,M,0.0,M,,*62
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074133.873,A,2219.099,N,08718.693,E,035.8,262.0,040820,000.0,W*70
+													$GPGGA,074134.873,2219.098,N,08718.682,E,1,12,1.0,0.0,M,0.0,M,,*64
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074134.873,A,2219.098,N,08718.682,E,065.2,261.7,040820,000.0,W*7D
+													$GPGGA,074135.873,2219.095,N,08718.663,E,1,12,1.0,0.0,M,0.0,M,,*67
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074135.873,A,2219.095,N,08718.663,E,065.5,262.6,040820,000.0,W*7B
+													$GPGGA,074136.873,2219.093,N,08718.643,E,1,12,1.0,0.0,M,0.0,M,,*60
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074136.873,A,2219.093,N,08718.643,E,055.9,265.9,040820,000.0,W*7B
+													$GPGGA,074137.873,2219.091,N,08718.627,E,1,12,1.0,0.0,M,0.0,M,,*61
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074137.873,A,2219.091,N,08718.627,E,057.2,257.9,040820,000.0,W*72
+													$GPGGA,074138.873,2219.088,N,08718.610,E,1,12,1.0,0.0,M,0.0,M,,*62
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074138.873,A,2219.088,N,08718.610,E,060.8,261.5,040820,000.0,W*76
+													$GPGGA,074139.873,2219.085,N,08718.592,E,1,12,1.0,0.0,M,0.0,M,,*67
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074139.873,A,2219.085,N,08718.592,E,034.3,344.4,040820,000.0,W*7E
+													$GPGGA,074140.873,2219.094,N,08718.589,E,1,12,1.0,0.0,M,0.0,M,,*63
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074140.873,A,2219.094,N,08718.589,E,067.7,348.2,040820,000.0,W*72
+													$GPGGA,074141.873,2219.113,N,08718.585,E,1,12,1.0,0.0,M,0.0,M,,*60
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074141.873,A,2219.113,N,08718.585,E,067.1,352.1,040820,000.0,W*7F
+													$GPGGA,074142.873,2219.131,N,08718.583,E,1,12,1.0,0.0,M,0.0,M,,*65
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074142.873,A,2219.131,N,08718.583,E,058.6,350.9,040820,000.0,W*7B
+													$GPGGA,074143.873,2219.147,N,08718.580,E,1,12,1.0,0.0,M,0.0,M,,*66
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074143.873,A,2219.147,N,08718.580,E,057.2,346.0,040820,000.0,W*7D
+													$GPGGA,074144.873,2219.163,N,08718.576,E,1,12,1.0,0.0,M,0.0,M,,*6E
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074144.873,A,2219.163,N,08718.576,E,017.3,352.3,040820,000.0,W*76
+													$GPGGA,074145.873,2219.168,N,08718.576,E,1,12,1.0,0.0,M,0.0,M,,*64
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074145.873,A,2219.168,N,08718.576,E,010.9,280.5,040820,000.0,W*79
+													$GPGGA,074146.873,2219.168,N,08718.572,E,1,12,1.0,0.0,M,0.0,M,,*63
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074146.873,A,2219.168,N,08718.572,E,020.7,289.8,040820,000.0,W*77
+													$GPGGA,074147.873,2219.170,N,08718.567,E,1,12,1.0,0.0,M,0.0,M,,*6F
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074147.873,A,2219.170,N,08718.567,E,024.7,000.0,040820,000.0,W*74
+													$GPGGA,074148.873,2219.177,N,08718.567,E,1,12,1.0,0.0,M,0.0,M,,*67
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074148.873,A,2219.177,N,08718.567,E,037.5,025.3,040820,000.0,W*78
+													$GPGGA,074149.873,2219.187,N,08718.571,E,1,12,1.0,0.0,M,0.0,M,,*6E
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074149.873,A,2219.187,N,08718.571,E,025.8,085.6,040820,000.0,W*70
+													$GPGGA,074150.873,2219.187,N,08718.579,E,1,12,1.0,0.0,M,0.0,M,,*6E
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074150.873,A,2219.187,N,08718.579,E,050.1,010.6,040820,000.0,W*77
+													$GPGGA,074151.873,2219.201,N,08718.581,E,1,12,1.0,0.0,M,0.0,M,,*65
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074151.873,A,2219.201,N,08718.581,E,049.3,000.0,040820,000.0,W*71
+													$GPGGA,074152.873,2219.215,N,08718.581,E,1,12,1.0,0.0,M,0.0,M,,*63
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074152.873,A,2219.215,N,08718.581,E,079.1,078.4,040820,000.0,W*7D
+													$GPGGA,074153.873,2219.219,N,08718.605,E,1,12,1.0,0.0,M,0.0,M,,*61
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074153.873,A,2219.219,N,08718.605,E,104.4,081.2,040820,000.0,W*71
+													$GPGGA,074154.873,2219.224,N,08718.636,E,1,12,1.0,0.0,M,0.0,M,,*68
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074154.873,A,2219.224,N,08718.636,E,111.1,080.7,040820,000.0,W*7D
+													$GPGGA,074155.873,2219.230,N,08718.668,E,1,12,1.0,0.0,M,0.0,M,,*67
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074155.873,A,2219.230,N,08718.668,E,081.8,085.8,040820,000.0,W*79
+													$GPGGA,074156.873,2219.231,N,08718.693,E,1,12,1.0,0.0,M,0.0,M,,*61
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074156.873,A,2219.231,N,08718.693,E,035.5,153.2,040820,000.0,W*7D
+													$GPGGA,074157.873,2219.222,N,08718.697,E,1,12,1.0,0.0,M,0.0,M,,*66
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074157.873,A,2219.222,N,08718.697,E,099.8,170.7,040820,000.0,W*75
+													$GPGGA,074158.873,2219.195,N,08718.702,E,1,12,1.0,0.0,M,0.0,M,,*6B
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074158.873,A,2219.195,N,08718.702,E,060.7,171.2,040820,000.0,W*75
+													$GPGGA,074159.873,2219.178,N,08718.704,E,1,12,1.0,0.0,M,0.0,M,,*6F
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074159.873,A,2219.178,N,08718.704,E,081.2,166.9,040820,000.0,W*76
+													$GPGGA,074200.873,2219.156,N,08718.710,E,1,12,1.0,0.0,M,0.0,M,,*69
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074200.873,A,2219.156,N,08718.710,E,082.0,173.5,040820,000.0,W*79
+													$GPGGA,074201.873,2219.134,N,08718.712,E,1,12,1.0,0.0,M,0.0,M,,*6E
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074201.873,A,2219.134,N,08718.712,E,063.5,167.4,040820,000.0,W*70
+													$GPGGA,074202.873,2219.116,N,08718.716,E,1,12,1.0,0.0,M,0.0,M,,*69
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074202.873,A,2219.116,N,08718.716,E,024.0,137.3,040820,000.0,W*73
+													$GPGGA,074203.873,2219.111,N,08718.721,E,1,12,1.0,0.0,M,0.0,M,,*6B
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074203.873,A,2219.111,N,08718.721,E,020.4,217.5,040820,000.0,W*76
+													$GPGGA,074204.873,2219.107,N,08718.717,E,1,12,1.0,0.0,M,0.0,M,,*6E
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074204.873,A,2219.107,N,08718.717,E,050.4,082.1,040820,000.0,W*7E
+													$GPGGA,074205.873,2219.109,N,08718.732,E,1,12,1.0,0.0,M,0.0,M,,*66
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074205.873,A,2219.109,N,08718.732,E,041.1,083.1,040820,000.0,W*72
+													$GPGGA,074206.873,2219.110,N,08718.744,E,1,12,1.0,0.0,M,0.0,M,,*6C
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074206.873,A,2219.110,N,08718.744,E,047.1,082.7,040820,000.0,W*79
+													$GPGGA,074207.873,2219.112,N,08718.758,E,1,12,1.0,0.0,M,0.0,M,,*62
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074207.873,A,2219.112,N,08718.758,E,043.8,074.1,040820,000.0,W*75
+													$GPGGA,074208.873,2219.116,N,08718.771,E,1,12,1.0,0.0,M,0.0,M,,*62
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074208.873,A,2219.116,N,08718.771,E,035.3,071.8,040820,000.0,W*73
+													$GPGGA,074209.873,2219.119,N,08718.781,E,1,12,1.0,0.0,M,0.0,M,,*63
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074209.873,A,2219.119,N,08718.781,E,019.0,059.6,040820,000.0,W*7B
+													$GPGGA,074210.873,2219.122,N,08718.786,E,1,12,1.0,0.0,M,0.0,M,,*64
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074210.873,A,2219.122,N,08718.786,E,019.0,000.0,040820,000.0,W*76
+													$GPGGA,074211.873,2219.122,N,08718.786,E,1,12,1.0,0.0,M,0.0,M,,*65
+													$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+													$GPRMC,074211.873,A,2219.122,N,08718.786,E,000.0,000.0,040820,000.0,W*7F</th>
+											</tr>
+											</table> -->
+											
+
+									<form>
+									  <label for="fname">Sample Data:</label><br>
+									  <input type="text" id="fname" name="fname" size="80" value="$GPGGA,140114.0,4727.695502,N,12218.466814,W,1,08,2.4,121.5,M,,,,*1F"><br>
+									  
+									</form>
+                                <a href="./nmea-js-simulator.html" target="_blank">[Run Simulation]</a>
+                            </p>
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-------------------------- Sixth section of the article---------------------------------------->
+
+                    <!--<section id="experiment-article-section-6">
+                        <div class="icon" id="experiment-article-section-6-icon">
+                            
+                            <img src="../images/manual.jpg"></div>
+                        <div class="heading" id="experiment-article-section-6-heading">
+                            Manual
+                        </div>
+
+                        <div class="content" id="experiment-article-section-6-content">                           
+                            <p>Manual content.....</p>                   
+                        </div>
+                    </section>-->
+                    <!-------------------------- Sixth section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-6">
+                        <div class="icon" id="experiment-article-section-6-icon">
+                            <!-- Enclose the icon image of your lab.-->
+                            <img src="../images/quizzes.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-6-heading">
+                            Quiz
+                        </div>
+
+                        <div class="content" id="experiment-article-section-6-content">      
+
+
+                          <!--   <div id="vlab-quiz-wrapper">
+                                <p style="text-align:left; font-size:18px; font-weight:bold;">Test Your Knowledge!!</p><br/>
+                                <div id="vlab-quiz-question-answer-options"></div>
+                                <div id="vlab-quiz-result"></div>
+                                <br/>
+                                <div id="vlab-quiz-trigger">
+                                    <button id="vqt-start" onClick="quizInitializeAllQuestion()" style="display: block;">Start</button>
+                                  <button id="vqt-next" onClick="quizNext()" style="display: none;">Next>></button> 
+                                    <button id="vqt-try-again" onClick="tryAgain()" style="display: none;">Try Again!</button>-->   
+                               </div>         
+                            </div> 
+
+                        </div>
+                    </section>                    
+
+                    <!-------------------------- Seventh section of the article---------------------------------------->
+
+                    <section id="experiment-article-section-7">
+                        <div class="icon" id="experiment-article-section-7-icon">
+                            <!-- Enclose the icon image of your lab.-->
+                            <img src="../images/reference.jpg"></div>
+
+                        <div class="heading" id="experiment-article-section-7-heading">
+                            Reference
+                        </div>
+<!--
+                        <div class="content" id="experiment-article-section-7-content">   
+						<h5>Books:</h5>                     
+                            <ol>
+                                <li>Gerla G., Fuzzy Logic Programming and fuzzy control, Studia Logica, 79 (2005) 231-254.</li>
+                                <li>Hájek P., Metamathematics of Fuzzy Logic, Kluwer Academic Publishers, Dordrecht, The Netherlands, 1998.</li>
+                                <li>Mamdani, E. H., Application of fuzzy algorithms for the control of a simple dynamic plant. In Proc IEEE (1974), 121-159.</li>									
+                            </ol>
+                           <br/>
+							<h5>Video Lectures:</h5>
+							<ol>
+                                <li><a href="http://nptel.ac.in/courses/108104049/13" target="_blank"> NPTEL Link for Fuzzy Logic and Basic Operations</a></li>
+                                <li><a href="http://nptel.ac.in/courses/108104049/14" target="_blank"> NPTEL Link for Fuzzy Logic and Basic Operations</a></li>
+                            </ol>				
+                        </div> -->
+                    </section>                   
+
+                </div>
+            </article>
+            <footer class="default" id="lab-footer">
+                <!-- Put the content here-->
+                <div style="margin-left:40%; margin-right:40% ">
+                    Copyright &copy; 2008-2016 Indian Institute of Technology Kharagpur,<a href="../license/index.html" target="_blank" style="margin:auto"> Licensing Terms </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
