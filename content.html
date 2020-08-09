@@ -1,0 +1,297 @@
+<!-- This file needs to be edited by the lab developer to suit their lab rquirements. -->
+<!-- Add class="default" to include any element as it is specified in default.html. 
+Do not include class="default" to the elements that you want to edit -->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Navigation</title>
+    </head>
+
+    <body>
+        <div id="lab">
+            <!-- The Lab Document Container-->
+            <!-- The lab Header contains the logo and the name of the lab, 
+      usually displayed on the top of the page-->
+
+            <header id="lab-header">
+                <div class="logo" id="lab-header-logo">
+                    <!-- Enclose the logo image of your lab or write it in text-->
+                    <img src="images/logo.jpg"></div>
+
+                <div class="heading" id="lab-header-heading">
+                    <!-- Write the name of your lab and link it to the home page of your lab. -->
+                    <a href="index.html">Navigation</a>
+                </div><!-- Add any additional element or link you want to add to 
+        the lab header, For example : Help (Enclosing them with 
+        suitable div is recommended)-->
+            </header><!-- The lab article is the main content area where all the experiment content sits-->
+
+            <article id="lab-article">
+                <!-- The lab article has an header, optional navigational 
+        menu, number of sections, an optional sidebar and a closing 
+        footer-->
+
+                <header id="lab-article-header">
+                    <!-- You can add a welcome message or title of the experiment enclosed in h1 tag here -->
+
+                    <div class="heading" id="lab-article-heading">
+                        Welcome to Navigation Lab
+                    </div><!-- Add any additional element if required with proper enclosing-->
+                </header><!-- Navigation menu is useful to organize the view of multiple sections inside the article-->
+
+                <nav class="default" id="lab-article-navigation">
+                    <!-- The menu will be dynamically generated to contain the 
+          headings of your sections or instead write the menu items 
+          of your choice individually enclosed in <li> tag as shown 
+          below-->
+                </nav><!-- All the sections of your lab or experiment can be enclosed together with a div element as shown below-->
+
+                <div id="lab-article-sections">
+                    <!-- First section of the article-->
+
+                    <section id="lab-article-section-1">
+                        <div class="icon" id="lab-article-section-1-icon">
+                            <!-- Enclose the icon image for the section. -->
+                            <img src="images/introduction.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="heading" id="lab-article-section-1-heading">
+                            Introduction
+                        </div><!-- Write the section content inside a paragraph element, You can also include images with <img> tag -->
+
+                        <div class="content" id="lab-article-section-1-content">
+                            <p class="pcontent">Navigation is the process of reading, and controlling the
+							 movement of a craft from one place to another.It is also the term of art used for the specialized knowledge
+							  used by navigators to perform navigation tasks.The word navigate is derived from the Latin 
+							  "navigare", meaning "to sail". All navigational techniques involve locating the navigator's position 
+							  compared to known locations or patterns.</p>							
+							
+							
+						</div>	
+                    </section><!-- Second section of the article-->
+
+                    <section id="lab-article-section-2">
+                        <div class="icon" id="lab-article-section-2-icon">
+                            <!-- Enclose the icon image for the section. -->
+                            <img src="images/simulation.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag and shown with a <h2> tag -->
+
+                        <div class="heading" id="lab-article-section-2-heading">
+                            List of experiments
+                        </div><!-- Write the section content inside a paragraph element, You can also include images with <img> tag -->
+
+                        <div class="content" id="lab-article-section-2-content">                            
+                                <!--<p>Fuzzy Logic</p>
+								<ol>
+									<li><a href="exp1/index.html">Introduction to Fundamental of Fuzzy Logic and Basic Operations</a></li>
+									<li><a href="exp2/index.html">Fuzzy Inference System(FIS)</a></li>
+									<li><a href="exp3/index.html">Fuzzy Weighted Average and Application</a></li>
+									<li><a href="exp4/index.html">Fuzzy Control and Application</a></li>
+                                </ol>
+								<p>Artificial Neural Networks</p>
+								<ol start="5">
+									<li><a href="exp5/index.html">Introduction to Neural Networks and Perceptron Example</a></li>
+									<li><a href="exp6/index.html">Multilayer Perceptron and Application</a></li>
+									<li><a href="exp7/index.html">Radial Basis Function and Application</a></li>
+									<li><a href="exp8/index.html">Probabilitic Neural Networks and Application</a></li>
+								</ol>
+								<p>Evolutionary Algorithms</p>
+								<ol start="9">
+									<li><a href="exp9/index.html">Introduction to Evolutionary Algorithms and Fundamentals</a></li>
+									<li><a href="exp10/index.html">Binary and Real Coded genetic Algorithms and Application</a></li>
+									<li><a href="exp11/index.html">Genetic Expression Programming and Application</a></li>
+								</ol>
+								<p>Probabilistic Reasoning</p>
+								<ol start="12">							
+									<li><a href="exp12/index.html" class="deactivate-link">Introduction to Probabilistic Reasoning and Baayesian Networks Application</a></li>
+								</ol>
+							</ol>	-->
+							<p><b>Experiments developed</b></p><br/>
+								<ul>
+									<li><a href="exp1/index.html">Determination of curvilinear position from NMEA file.</a></li>
+									
+								</ul><br/>
+								<p><b>Experiments under development</b></p><br/>
+								<ul>	
+									<li><a href="exp2/index.html">Determination of C/N<sub>0</sub> ratio and Number of satellites from NMEA file.</a></li>
+									<li><a href="exp3/index.html">Determination of satellite orbital parameter from RINEX file.</a></li>
+									<li><a href="exp4/index.html">Determination of satellite observable parameter from RINEX file.</a></li>
+									
+									
+								&nbsp;									
+                        </div>
+                    </section>
+					
+					<!--------------------- Third section of the article --------------------------------------------------->
+                    <section id="lab-article-section-3" style="display: block;">
+                        <div class="icon" id="lab-article-section-3-icon">
+                            <!-- Enclose the icon image for the section. -->
+                            <img src="images/instruction.png"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="heading" id="lab-article-section-3-heading">
+                            Instruction
+                        </div><!-- Write the section content inside a paragraph element, You can also include images with <img> tag -->
+
+                        <div class="content" id="lab-article-section-3-content">
+							<p class="pheader">Java Runtme Environment (JRE) Installation Procedures</p>
+							<p class="psubheader">Step 1:</p>
+							<p class="pcontent">Install <a href="http://www.java.com/" target="_blank">JAVA Runtime Environment (JRE)</a> on your system.</p>
+							<p class="psubheader">Step 2:</p>
+							<p class="pcontent">Check the JRE version that is installed on your system.</p>
+							<ul>
+								<li>Open Command Prompt (Start -> Accessories -> Command Prompt).</li>
+								<li>Type "java-version" and press enter key.</li>
+							</ul>
+							&nbsp;
+							<p class="pcontent">If 32-bit JRE is running on your system then it will show the following:</p>
+							<p class="pfigure">
+								<img alt="java-version-32" src="images/java-version-32.png" style="width:650px; height:140px">
+							</p>
+							<p class="pcontent">Otherwise if 64-bit JRE is running on your system:</p>
+							<p class="pfigure">
+								<img alt="java-version-64" src="images/java-version-64.png" style="width:650px; height:140px">
+							</p>
+							<p class="pheader">Configuring Java Security Bypass</p>
+							<p class="pcontent">Please bypass the URL <b>http://vlabs.iitkgp.ernet.in/</b> for JAVA Security reason.</p>
+							<p class="pcontent">To Bypass Java Security follow the following steps:</p>
+							<ul>
+								<li>Go to <b>Control Panel</b></li>
+								<li>Click on <b>Java</b> and wait few seconds to display <b>Java Control Panel.</b></li>
+								<li>Choose <b>Security</b> tab.</li>
+								<li>Check <b>Enable Java content in the browser</b> and select security level as <b>High</b></li>
+								<li>Click on <b>Edit Site List...</b></li>
+								<li>Click on <b>Add</b> button for adding the URL <b>http://vlabs.iitkgp.ernet.in/</b> in Exception Site List.</li>
+								<li>After entering the URL Click on <b>OK</b> -> <b>Continue</b> -> <b>OK</b></li>
+							</ul>
+							&nbsp;
+							<p class="pfigure">
+								<img alt="java-java-control-panel" src="images/java-control-panel.png" style="width:540px; height:570px">
+							</p>
+							<p class="pcontent">Clear browser cache (optional) and restart web browser(Internet Explorer, Mozilla Firefox, Google Chrome, Opera, Apple Safari, etc.).</p>
+							<p class="pcontent"><b>In case of Chrome browser (Version 42 and later) enable NPAPI:</b></p>
+							<ol>
+								<li>In your URL bar, enter: chrome://flags/#enable-npapi</li>
+								<li>Click the <b>Enable</b> link for the <b>Enable NPAPI</b> configuration option</li>
+								<li>Click the <b>Relaunch</b> button that now appears at the bottom of the configuration page.</li>
+							</ol>
+							&nbsp;							
+						</div>
+					</section>	
+					
+                    <!--------------------- Fourth section of the article --------------------------------------------------->
+					                    <section id="lab-article-section-4">
+                        <div class="icon" id="lab-article-section-4-icon">
+                            <!-- Enclose the icon image for the section. -->
+                            <img src="images/techgy.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="heading" id="lab-article-section-4-heading">
+                            Technology Used
+                        </div><!-- Write the section content inside a paragraph element, You can also include images with <img> tag -->
+                        <div class="content" id="lab-article-section-4-content">
+						                         <ol>
+												 <li>JavaScript</li>
+						 <li>HTML5</li>
+						 </ol>
+                            <h3>Prerequisite</h3>
+							<ol>
+							</li>Not Applicable</li>
+							</ol>
+                        </div>
+                    </section>
+
+					<!--------------------- Fifth section of the article --------------------------------------------------->
+                    <section id="lab-article-section-5" style="display: block;">
+                        <div class="icon" id="lab-article-section-5-icon">
+                            <!-- Enclose the icon image for the section. -->
+                            <img src="images/people.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="heading" id="lab-article-section-5-heading">
+                            People
+                        </div><!-- Write the section content inside a paragraph element, You can also include images with <img> tag -->
+
+                        <div class="content" id="lab-article-section-5-content">
+                            <p class="heading-header">Principal Investigator:</p>
+                            <dl>                                
+                                <dt><img src="images/image-icon.jpg" style="height: 100px; width: 100px;"></dt>
+                                <dt>Prof. C.S.Kumar</dt>
+                                <dt>Mechanical Engineering Department</dt>
+                                <dt>Indian Institute of Technology, Kharagpur - 721302</dt>
+                                <dt>Email : kumar @ mech.iitkgp.ernet.in</dt>
+                                <dt>Phone: +91-3222-282934</dt>
+                                <dt>web page: 	<a href="http://facweb.iitkgp.ernet.in/~cskumar/">http://facweb.iitkgp.ernet.in/~cskumar/</a></dt>
+                            </dl>             
+							<br>
+
+							<!--<p class="pheader">Lab Developer:</p>
+							<p> <img alt="developer" src="images/developer.jpg" style="width: 140px; height: 150px"><br>
+							<p><b>T Ravi Kumar</b><br>
+							E-Mail: <b>travikumar0684 @ gmail.com</b></p>
+							&nbsp;
+							
+							
+							<p> <img alt="ie-sd" src="images/ie-sd.jpg" style="width: 140px; height: 150px"><br>
+							<p><b>Souravik Dutta</b><br>
+							Junior Research Fellow<br>
+							Department of Mechanical Engineering,<br>
+							Indian Institute of Technlogy, Kharagpur-721302<br>
+							West Bengal - India.<br>
+							E-Mail: <b>srvk.dutta @ gmail.com</b></p>
+							&nbsp;-->
+							<p class="pheader">Integration Engineers:</p>
+							
+                            <dl>
+                                <p> <img alt="ie-dda" src="images/image-icon.jpg" style="width: 140px; height: 150px"><br>
+								<dt><b>Debasish Das Adhikary</b></dt>
+								<dt>Senior Project Assistant</dt>
+                                <dt>Virtual Laboratory System</dt>
+                                <dt>IIT KHARAGPUR</dt>                                
+                                <dt>E-Mail:<b>deba.aot @ gmail.com</b></dt>
+                            </dl>
+							<br>
+							
+							
+                        </div>
+                    </section>
+					<!--------------------- sixth section of the article --------------------------------------------------->
+                    <section id="lab-article-section-6">
+                        <div class="icon" id="lab-article-section-6-icon">
+                            <!-- Enclose the icon image for the section. -->
+                            <img src="images/feedback.jpg"></div>
+                        <!-- The heading for the section can be enclosed in a div tag. -->
+
+                        <div class="heading" id="lab-article-section-6-heading">
+                            Feedback
+                        </div><!-- Write the section content inside a paragraph element, You can also include images with <img> tag -->
+
+                        <div class="content" id="lab-article-section-6-content">                            
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuDV3NFqMCjf0KNlCWhetT-nOuu7UZIF4tEg_bU19BSZVTIQ/viewform?embedded=true" width="900" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                        </div>
+                    </section>
+					
+					
+                </div><!-- An article can have a sidebar that contain related 
+          links and additional material (it is optional at this 
+          moment)-->
+
+                <aside class="default" id="lab-article-sidebar">
+                    <!-- put the content that you want to appear in the sidebar-->
+                </aside><!-- Article footer can display related content and additional links -->
+
+                <footer class="default" id="lab-article-footer">
+                    <!-- Put the content that you want to appear here-->
+                </footer>
+            </article><!-- Links to other labs, about us page can be kept the lab footer-->
+
+            <footer class="default" id="lab-footer">
+                <!-- Put the content here-->
+                <div style="margin-left:40%; margin-right:40% ">
+                    Copyright &copy; 2008-2016 Indian Institute of Technology Kharagpur,<a href="license/index.html" target="_blank" style="margin:auto"> Licensing Terms </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
